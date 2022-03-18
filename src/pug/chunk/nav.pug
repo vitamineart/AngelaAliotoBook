@@ -1,0 +1,14 @@
+block PrimaryNavigation
+  -
+    var NavItems = [
+        {'url':'/','title':'Home', 'name':'home'},
+        {'url':'foreword-by-coppola.html','title':'Foreword by Francis Ford Coppola', 'name':'coppola'},
+        {'url':'about.html','title':'Look Inside: <br> Read Excerpt About PG&E', 'name':'about'},
+        {'url':'ask-for-copy.html','title':'Ask for Complimentary Copy ', 'name':'ask-for-copy'}
+      ];
+
+nav.main-nav.grid.gap-y-5
+  each page,i in NavItems
+    if pageID !== page.name
+        a(class="transition-all duration-300 inline-grid place-items-center leading-tight px-3 py-5 text-lg rounded text-center hover:text-red ", href=`${page.url}`) !{page.title}
+

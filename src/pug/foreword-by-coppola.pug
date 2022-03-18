@@ -1,0 +1,39 @@
+extends ./layout/base
+block variables
+    - var pageTitle = 'Angela Alioto Book'
+    - var pageID = 'coppola'
+
+
+block page
+
+
+    div(class=" grid grid-cols-12 pl-10 relative overflow-hidden pb-20")
+        div(class="hidden lg:block lg:col-span-1 xl:col-span-2 2xl:col-span-3")
+        div(class="col-span-8 lg:col-span-5 pr-20")
+            h1(class=" font-playfair text-7xl mb-10 mt-10 lg:mt-16")
+                span.text-red.mr-4.inline-block !{'Excerpt <br> About <span class="text-black">PG&E</span>'}
+
+            .main-content
+                p.
+                    THE DAY I MET ANGELA ALIOTO was a foggy one but warm for the season. It was in San Francisco - North Beach, of course; and her father, who wanted to be the governor of California, was making the political rounds. She was being dragged along with her baby daughter, and behind her smile I detected a singular lack of enthusiasm for spending the day as a photo opportunity. She was going to college at the time, and trying to manage a small family. Politics was keeping her from doing what she really needed and wanted to do. She wasn’t fazed by meeting any number of luminaries - Steve McQueen, Jerry Brown, Clint Eastwood. Politics was a means, not an end, for her. Back then, the end was to help her father.
+                p.
+                    These days, it’s to change the world.
+
+                p.
+                    This is not to say that Angela has delusions of grandeur. Her greatest satisfaction comes from letters she gets from people she’s helped, even indirectly. She’s drawn to the types of issues and problems other politicians probably view as lost causes. When Angela turns her attention to a cause, it’s not lost any more. She has taken on some of the most difficult issues and focused the spotlight of public scrutiny on them. What Angela realizes, and what mobilizes her, is that she has too much at stake, beginning with her own kids, to let a decent future pass us by. Angela’s politics are based on common sense and vital issues like children, family, and safe schools and streets.
+                p.
+                    What is admirable about Angela’s vision is that it’s one that looks to the future. If Angela talks about the past, it is to illustrate what we can learn for the future. From the young woman with a baby balanced on her hip, reluctantly politicking, Angela has emerged as a strong, compassionate leader: No one else could have written this book, as Angela has an obligation - an obligation to get her message out there, to take aim at the heart of what has to be accomplished.
+
+                div.mt-10
+                    | FRANCIS FORD COPPOLA
+                    br
+                    | San Francisco
+                    br
+                    | February 1997
+
+        div(class="lg:col-span-4 ")
+            img(src="img/stock-photo-francis-ford-coppola-at-the-nd-annual-academy-governors-awards-kodak-theater-hollywood-ca-100291037 1.jpg" alt="alt" class="max-w-none -mr-20" width="582" height="773")
+
+            .mt-10.max-w-max
+                include chunk/nav
+

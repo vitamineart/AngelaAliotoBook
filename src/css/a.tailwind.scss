@@ -1,0 +1,19 @@
+@tailwind base;
+@layer base {
+  :root {
+    --c-blue-dark: #071f51;
+  }
+  body {
+    @apply font-roboto text-sm;
+  }
+  a {
+    &:hover {
+      @apply underline;
+    }
+  }
+  .container {
+    @apply px-6 sm:px-8 md:px-10 mx-auto max-w-5xl;
+  }
+}
+@tailwind components;
+@tailwind utilities;

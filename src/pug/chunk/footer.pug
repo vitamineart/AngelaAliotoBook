@@ -1,0 +1,32 @@
+footer.footer.relative.w-full.py-10.bg-red.text-white
+    .container
+        div(class=" md:flex")
+            div(class="font-playfair text-base min-w-max ").
+                Angela Alioto
+                <br>
+                Straight to the Heart
+            nav(class="my-10 md:my-0 md:ml-11 grid gap-y-2")
+                -
+                    const navlinks = [
+                        {
+                            anchor: "Home",
+                            link: "/"
+                        },
+                        {
+                            anchor: "Foreword by Francis Ford Coppola",
+                            link: "foreword-by-coppola.html"
+                        },
+                        {
+                            anchor: "Look Inside: Read Excerpt About PG&E",
+                            link: "about.html"
+                        },
+                        {
+                            anchor: "Ask for Complimentary Copy",
+                            link: "#"
+                        }
+                    ]
+                each x in navlinks
+                    a(class="" href=`${x.link}`) #{x.anchor}
+            div(class="self-end footer-copyright ml-auto font-medium text-xs") © 2022  All Rights Reserved
+
+

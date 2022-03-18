@@ -1,0 +1,27 @@
+extends ./layout/base
+block variables
+    - var pageTitle = 'Angela Alioto Book'
+    - var pageID = 'home'
+
+
+block page
+    div(class="relative before:z-50 before:w-full before:h-full before:inset-0 before:absolute before:transparent before:shadow-[0_-23px_86px_hsla(0,0%,0%,.3)_inset]")
+        img(class="relative z-0" src="img/Angela_Alito_page_cover@2000.jpg", srcset="img/Angela_Alito_page_cover@1000.jpg 1000w, img/Angela_Alito_page_cover@1500.jpg 1500w, img/Angela_Alito_page_cover@2000.jpg 2000w, img/Angela_Alito_page_cover@3000.jpg 3000w, img/Angela_Alito_page_cover@4000.jpg 4000w," alt="alt" width="2000" height="992")
+
+
+    .container.grid.grid-cols-12.py-8
+        div(class="col-span-8 pr-20")
+            h1.font-playfair.text-7xl.mt-8.mb-10
+                span.text-red.mr-4.inline-block Political
+                | Cantos
+            p ANGELA ALIOTO, one of America's most outspoken political activists, turns her laser-sharp focus on the American political process, confirming our worst fears about influence peddling and governmental favors for sale. Drawing on her eight years as a prominent politician and a continuous thorn in the side of the political establis hment, she constructs modern politics as a parallel to Danté's Inferno, and pulls no punches in showing why government and politics aren't working like they should.
+
+        div(class="col-span-4")
+            include chunk/nav
+
+    section.bg-gray.py-10.my-32
+        .container
+            div(class=" sm:flex items-center flow-root")
+                img(loading="lazy" class="-mt-20 sm:-mb-20" src="img/AngelaAlioto@320.jpg" srcset="img/AngelaAlioto@160.jpg 160w, img/AngelaAlioto@320.jpg 320w, img/AngelaAlioto@640.jpg 640w, img/AngelaAlioto@960.jpg 960w" sizes="(max-width:370px) 86vw, 320px" alt="alt" width="320" height="386")
+                div(class=" font-playfair text-white text-base md:text-lg lg:text-xl p-6 sm:pl-14 md:pl-20 lg:pl-28 mt-3 sm:mt-0").
+                    ANGELA ALIOTO is a political writer and an attorney. She has served as a San Francisco supervisor and as the vice chair of the California Democratic Party. She lives in San Francisco.
