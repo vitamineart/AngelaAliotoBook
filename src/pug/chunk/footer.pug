@@ -22,11 +22,12 @@ footer.footer.relative.w-full.py-10.bg-red.text-white
                         },
                         {
                             anchor: "Ask for Complimentary Copy",
-                            link: "#"
+                            link: "https://knightsofsaintfrancis.myshopify.com/cart/42125551927464:1?channel=buy_button",
+                            target: '_blank'
                         }
                     ]
                 each x in navlinks
-                    a(class="" href=`${x.link}`) #{x.anchor}
+                    a(class="" href=`${x.link}` target=x.target) #{x.anchor}
             div(class="self-end footer-copyright ml-auto font-medium text-xs") © 2022  All Rights Reserved
 
 
