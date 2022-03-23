@@ -9,19 +9,20 @@ block page
         img(class="relative z-0" src="img/Angela_Alito_page_cover@2000.jpg", srcset="img/Angela_Alito_page_cover@1000.jpg 1000w, img/Angela_Alito_page_cover@1500.jpg 1500w, img/Angela_Alito_page_cover@2000.jpg 2000w, img/Angela_Alito_page_cover@3000.jpg 3000w, img/Angela_Alito_page_cover@4000.jpg 4000w," alt="alt" width="2000" height="992")
 
 
-    .container.grid.grid-cols-12.py-8
-        div(class="col-span-8 pr-20")
-            h1.font-playfair.text-7xl.mt-8.mb-10
+    div(class=" container grid grid-cols-12 lg:py-8")
+        div(class="col-span-12 lg:col-span-8 lg:pr-20")
+            h1(class="font-playfair text-5xl md:text-6xl lg:text-7xl mt-8 mb-6 lg:mb-10")
                 span.text-red.mr-4.inline-block Political
                 | Cantos
             p ANGELA ALIOTO, one of America's most outspoken political activists, turns her laser-sharp focus on the American political process, confirming our worst fears about influence peddling and governmental favors for sale. Drawing on her eight years as a prominent politician and a continuous thorn in the side of the political establis hment, she constructs modern politics as a parallel to Danté's Inferno, and pulls no punches in showing why government and politics aren't working like they should.
 
-        div(class="col-span-4")
+            a(href="https://knightsofsaintfrancis.myshopify.com/cart/42125551927464:1?channel=buy_button" class="mt-10 lg:hidden transition-all duration-300 inline-grid place-items-center leading-tight px-10 py-5 text-lg rounded text-center hover:text-red" style="box-shadow: 0 0 25px hsla(0deg 0% 0% / 15%) inset; min-height: 83px; max-width: 320px;" target="_blank") Ask for Complimentary Copy
+        div(class="hidden lg:block lg:col-span-4")
             include chunk/nav
 
 
 
-    section.bg-gray.py-10.my-32
+    section(class=" bg-gray py-10 mt-20 mb-0 sm:mb-20 lg:my-32")
         .container
             div(class=" sm:flex items-center flow-root")
                 img(loading="lazy" class="-mt-20 sm:-mb-20" src="img/AngelaAlioto@320.jpg" srcset="img/AngelaAlioto@160.jpg 160w, img/AngelaAlioto@320.jpg 320w, img/AngelaAlioto@640.jpg 640w, img/AngelaAlioto@960.jpg 960w" sizes="(max-width:370px) 86vw, 320px" alt="alt" width="320" height="386")

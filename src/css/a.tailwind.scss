@@ -4,7 +4,7 @@
     --c-blue-dark: #071f51;
   }
   body {
-    @apply font-roboto text-sm;
+    @apply font-roboto text-sm overflow-x-hidden;
   }
   a {
     &:hover {

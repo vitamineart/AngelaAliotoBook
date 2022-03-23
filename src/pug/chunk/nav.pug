@@ -1,13 +1,4 @@
-block PrimaryNavigation
-  -
-    var NavItems = [
-        {'url':'/','title':'Home', 'name':'home'},
-        {'url':'foreword-by-coppola.html','title':'Foreword by Francis Ford Coppola', 'name':'coppola'},
-        {'url':'about.html','title':'Look Inside: <br> Read Excerpt About PG&E', 'name':'about'},
-        {'url':'https://knightsofsaintfrancis.myshopify.com/cart/42125551927464:1?channel=buy_button','title':'Ask for Complimentary Copy ', 'name':'ask-for-copy', 'target':'_blank'}
-      ];
-
-nav.main-nav.grid.gap-y-5
+nav(class="main-nav gap-y-5 hidden lg:grid")
   each page,i in NavItems
     if pageID !== page.name
         a(class="transition-all duration-300 inline-grid place-items-center leading-tight px-3 py-5 text-lg rounded text-center hover:text-red ", href=`${page.url}` target=page.target) !{page.title}

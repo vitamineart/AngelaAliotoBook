@@ -1,13 +1,31 @@
-header.header.relative.py-6.bg-gray
-    .container.text-center
+block PrimaryNavigation
+  -
+    var NavItems = [
+        {'url':'/','title':'Home', 'name':'home'},
+        {'url':'foreword-by-coppola.html','title':'Foreword by Francis Ford Coppola', 'name':'coppola'},
+        {'url':'about.html','title':'Look Inside: <br class="hidden lg:inline-block"> Read Excerpt About PG&E', 'name':'about'},
+        {'url':'https://knightsofsaintfrancis.myshopify.com/cart/42125551927464:1?channel=buy_button','title':'Ask for Complimentary Copy ', 'name':'ask-for-copy', 'target':'_blank'}
+      ];
+
+
+
+header(class="header relative py-6 bg-gray")
+    div(class="container flex sm:justify-center")
         if pageID !== 'home'
-            a(href='/' class=` text-white font-playfair text-xl cursor-pointer hover:opacity-70  hover:no-underline`)
+            a(href='/' class=` text-white font-playfair header-title-link cursor-pointer hover:opacity-70  hover:no-underline`)
                 | Angela Alioto
                 |
                 span.text-red-light Straight to the Heart
         else
-            div(class=`text-white font-playfair text-xl`)
+            div(class=`text-white font-playfair header-title-link`)
                 | Angela Alioto
                 |
                 span.text-red-light Straight to the Heart
 
+
+        div(class="nav-collapsed lg:hidden")
+            div(class="mobile-nav-toggle")
+            nav(class="mobile-nav absolute inset-0 top-10")
+                each page,i in NavItems
+                    if pageID !== page.name
+                        a(class="transition-all duration-300 inline-grid place-items-center leading-tight px-3 py-5 text-lg rounded text-center hover:text-red ", href=`${page.url}` target=page.target) !{page.title}
