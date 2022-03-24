@@ -28,4 +28,4 @@ header(class="header relative py-6 bg-gray")
             nav(class="mobile-nav absolute inset-0 top-10")
                 each page,i in NavItems
                     if pageID !== page.name
-                        a(class="transition-all duration-300 inline-grid place-items-center leading-tight px-3 py-5 text-lg rounded text-center hover:text-red ", href=`${page.url}` target=page.target) !{page.title}
+                        a(class="transition-all font-playfair  duration-300 inline-grid place-items-center leading-tight px-3 py-5 text-xl rounded text-center hover:text-red ", href=`${page.url}` target=page.target) !{page.title}

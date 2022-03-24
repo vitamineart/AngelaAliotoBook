@@ -1,11 +1,11 @@
 footer.footer.relative.w-full.py-10.bg-red.text-white
     .container
         div(class=" md:flex")
-            div(class="font-playfair text-base min-w-max ").
+            div(class="font-playfair text-lg min-w-max ").
                 Angela Alioto
                 <br>
                 Straight to the Heart
-            nav(class="my-10 md:my-0 md:ml-11 grid gap-y-2")
+            nav(class="my-12 md:my-0 md:ml-16 grid")
                 -
                     const navlinks = [
                         {
@@ -27,7 +27,7 @@ footer.footer.relative.w-full.py-10.bg-red.text-white
                         }
                     ]
                 each x in navlinks
-                    a(class="" href=`${x.link}` target=x.target) #{x.anchor}
+                    a(class="h-9" href=`${x.link}` target=x.target) #{x.anchor}
             div(class="self-end footer-copyright ml-auto font-medium text-xs") © 2022  All Rights Reserved
 
 
