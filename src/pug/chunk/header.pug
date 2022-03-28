@@ -23,9 +23,9 @@ header(class="header relative py-6 bg-gray")
                 span.text-red-light Straight to the Heart
 
 
-        div(class="nav-collapsed lg:hidden")
+        div(class="nav-collapsed absolute w-16 h-16 inset-0 left-auto cursor-pointer transition-all duration-300 z-0 lg:hidden")
             div(class="mobile-nav-toggle")
-            nav(class="mobile-nav absolute inset-0 top-10")
+            nav(class="mobile-nav absolute inset-0 top-10 w-full h-full opacity-0 invisible transition-none flex flex-col mt-14")
                 each page,i in NavItems
                     if pageID !== page.name
-                        a(class="transition-all font-playfair  duration-300 inline-grid place-items-center leading-tight px-3 py-5 text-xl rounded text-center hover:text-red ", href=`${page.url}` target=page.target) !{page.title}
+                        a(class="leading-normal text-white rounded-none px-8 py-6 font-bold transition-all font-playfair duration-300 inline-grid place-items-center text-xl text-center  hover:bg-black/20 hover:text-white hover:no-underline", href=`${page.url}` target=page.target) !{page.title}
